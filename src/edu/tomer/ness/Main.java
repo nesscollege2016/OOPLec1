@@ -1,56 +1,24 @@
 package edu.tomer.ness;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-/*
-	// write your code here
-        int x = 10;
+/*        Date now = new Date();
+        Fish nemo = new Fish("Nemo", "Orange", "Clown", now.toString(), 0);
+        now = new Date();
+        nemo.feed(now.toString());*/
 
-        //a new Instance of class User
-        User tomer = new User();
+        Date now = new Date();
 
-        //set the properties of the user:
-        tomer.id = "03724390324";
-        tomer.name = "Tomer";
-        tomer.lastName = "Buzaglo";
-        tomer.phone = "0507123012";
-
-        //Methods: Actions:
-        tomer.sayHello();
-        tomer.sayYourName();
-        tomer.doYouLikeThisColor("Black");
-        tomer.saySomething("This is great!");
-
-
-        String myString = new String("Hello, World");
-        for (int i = 0; i < myString.length(); i++) {
-            System.out.println(myString.charAt(i));
+        for (int i = 0; i < 1; i++) {
+            Fish temp = new Fish();
+            System.out.println("_______________________");
+            now = new Date();
+            temp.feed(now.toString());
         }
-
-        Scanner scan = new Scanner(System.in);
-
-        Student[] studentsArr = new Student[3];
-
-        for (int i = 0; i < 3; i++) {
-            Student s = new Student();
-            s.profession = scan.next();
-            s.name = scan.next();
-            studentsArr[i] = s;
-        }
-
-
-        for (int i = 0; i < studentsArr.length; i++) {
-            Student temp = studentsArr[i];
-            temp.dispDetails();
-        }
-*/
-        //we use the constructor to create instances.
-        Student sami = new Student("Sami", "Fireman");
-
-
 
     }
 }
