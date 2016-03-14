@@ -6,19 +6,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-/*        Date now = new Date();
-        Fish nemo = new Fish("Nemo", "Orange", "Clown", now.toString(), 0);
-        now = new Date();
-        nemo.feed(now.toString());*/
+        String[] answers = {"4", "2", "3", "11"};
+        TriviaQuestion q1 = new TriviaQuestion("1 + 1 ?", answers, 2);
 
-        Date now = new Date();
+        q1.show();
+        q1.showAnswers();
 
-        for (int i = 0; i < 1; i++) {
-            Fish temp = new Fish();
-            System.out.println("_______________________");
-            now = new Date();
-            temp.feed(now.toString());
-        }
-
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the correct Answer: ");
+        int ans = scan.nextInt();
+        q1.testAnswer(ans);
     }
 }

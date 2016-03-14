@@ -13,4 +13,21 @@ public class TriviaQuestion {
         this.answers = answers;
         this.correctAnswerIndex = correctAnswerIndex;
     }
+
+    boolean testAnswer(int index){
+        System.out.println(index == correctAnswerIndex ? "Great!" : "Too Bad...");
+        return index == correctAnswerIndex;
+    }
+
+    void show(){
+        System.out.println(question);
+    }
+
+    void showAnswers(){
+        for (int i = 0; i < answers.length; i++) {
+            String ans = answers[i];
+            System.out.println(i + 1 +") " + ans);
+        }
+    }
+
 }
